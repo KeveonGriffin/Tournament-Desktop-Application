@@ -13,13 +13,15 @@ namespace TrackerLibrary
         {
             if (database)
             {
-                //TODO: database connection
+                //TODO: database connection... properly
                 SqlConnector sql = new SqlConnector();
                 Connections.Add(sql);
             }
             if (textfile)
             {
-                //TODO: textfile connection
+                //TODO: textfile connection... properly
+                TextFileConnector text = new TextFileConnector();
+                Connections.Add(text);
             }
         }
     }
